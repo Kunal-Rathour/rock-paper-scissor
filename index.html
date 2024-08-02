@@ -4,12 +4,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script.js"></script>
+
     <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="header">
+        <h1>Rock Paper Scissor</h1>
+    </div>
+    <div class="body">
+        <div class="player-container">
+            <button class="enabled" id="rock">
+                <img src="images/rock-svgrepo-com.svg" alt="rock">
+            </button>
+            <button class="enabled" id="paper">
+                <img src="images/paper-plane-svgrepo-com.svg" alt="">
+            </button>
+            <button class="enabled" id="scissor">
+                <img src="images/scissor.svg" alt="">
+            </button>
+        </div>
+        <div class="score-box">
+            <h2>Player Score:</h2>
+            <h2 id="player-score">0</h2>
+            <h2>Computer Score:</h2>
+            <h2 id="computer-score">0</h2>
+        </div>
+        <div class="computer-container">
+            <button id="rock" class="disabled">
+                <img src="images/rock-svgrepo-com.svg" alt="rock">
+            </button>
+            <button id="paper" class="disabled">
+                <img src="images/paper-plane-svgrepo-com.svg" alt="">
+            </button>
+            <button id="scissor" class="disabled">
+                <img src="images/scissor.svg" alt="">
+            </button>
+        </div>
 
+    </div>
+    <div class="reset-box"> <button class="reset">Reset</button></div>
+
+    <div class="result">
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
